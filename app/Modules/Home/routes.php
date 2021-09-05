@@ -17,6 +17,7 @@ $namespace = 'App\Modules\Home\Controllers';
 Route::group(
     ['namespace' => $namespace, 'prefix'=>'', 'middleware' => ['web']],
     function() {
-        Route::get('', 'HomeController@Index')->name('Home1');
+        Route::get('', 'HomeController@Index')->name('Home');
+        Route::get('/{lang?}', 'HomeController@Index')->name('home.lang');
     }
 );

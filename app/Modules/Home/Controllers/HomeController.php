@@ -40,10 +40,20 @@ class HomeController extends Controller
      * @author AnhHT <anh.ho@toploop.co	>
      * @return \Illuminate\Http\Response 
      */
-    public function Index(Request $request)
+    public function Index(Request $request, $lang = null)
     {
         try {
-            return view('Home::Home.Index');
+            if( isset($lang) ) {
+                $code  = $lang;
+                Session::put('lang', $code);
+            } else {         
+                    $code = 'vi';              
+            }
+
+            App::setLocale($code);
+            $model = new HomeModel();
+            $data = $model->GetHomeData($code);
+            return view('Home::Home.Index', $data);
         }
         catch(\Exception $e) {
             return redirect()->route('ServerError', ["error" => $e->getMessage()]);
