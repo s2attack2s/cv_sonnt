@@ -4,7 +4,7 @@
 
       <div class="cv-group profile">
          <div class="cv-profile-header cv-profile-img">
-            <img src="/images/home/image-profile.jpg" />
+            <img src="./images/home/image-profile.jpg" />
          </div>
          <div class="cv-profile-header cv-profile-info">
             <h2>Nguyễn Trọng Sơn</h2>
