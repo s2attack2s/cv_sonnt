@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+.cv {
+    background: radial-gradient(black, transparent);
+}
+.cv .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 50px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cv-group {
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+.cv-profile-header {
+    padding: 20px;
+    float: left;
+}
+.cv .container .cv-profile-img {
+    width: 175px;
+}
+.cv .container .cv-profile-img img {
+    width: 100%;
+}
+.cv-profile-info h2 {
+    color: transparent;
+    background-image: linear-gradient(to right, #00aefd, #ffa400);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: capitalize;
+}
+.mobile{
+    display: none;
+}
+h3 {
+    text-transform: uppercase;
+}
+.work-ex h6{
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(to right, #00aefd, #ffa400);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.info-group p {
+    display: inline-block;
+}
+.info-group p:first-child {
+    font-weight: bold;
+    padding: 0 20 0 0px;
+    width: 100px;
+}
+.info-group p:last-child {
+    font-weight: 400;
+    padding: 0 50px;
+}
+.info-group:last-child p:last-child {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+hr {
+    border-top: 1px solid black;
+}
+p{
+    line-height: 25px;
+}
+.education-time, .work-ex-time, .cer-time, .awards-time{
+    width: 180px;
+}
+.education-time p,.work-ex-time p, .cer-time{
+    display: inline-block;
+}
+.work-ex-group, .cer-group, .awards-group{
+    display: flex;
+    padding-top: 10px;
+    border-bottom: .05cm solid #eee;
+}
+#canvas{
+    position: fixed;
+}
+@media screen and (max-width: 600px) {
+    .cv-profile-header {
+        padding: 0px;
+    }
+    .info-group p:last-child{
+        padding: 0;
+    }
+    .info-group p:first-child{
+        width: 80px;
+    }
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: initial;
+    }
+    .education-time, .work-ex-time, .cer-time, .awards-time {
+        max-width: 90px;
+        min-width: 90px;
+    }
+}
+

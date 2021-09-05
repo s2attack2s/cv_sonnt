@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'title' => 'COMPANY PROFILE',
+    'name' => '商号',
+    'name_detail_vn' => 'TOPLOOPCO.LTD',
+    'name_detail_jp' => '株式会社トップループ',
+    'title_table_vn' => "ベトナム法人",
+    'title_table_ja' => "日本法人",
+    'founded' => '設立',
+    'founded_detail_vn' => '2019年05月21日',
+    'founded_detail_jp' => '2019年12月3日',
+    'tel' => '電話番号',
+    'capital' => '資本金',
+    'capital_detail_jp' => '5,000,000円',
+    'bank' => '主要取引銀行',
+    'bank_detail_vn' => 'TPBank',
+    'bank_detail_jp' => '三菱東京UFJ銀行新宿支店',
+    'ceo' => '代表取締役社長',
+    'ceo_detail_vn' => 'グエン・ホン・フク',
+    'ceo_detail_jp' => 'グェン・フー・マン・コイ',
+    'brand' => 'ブランドメッセージ',
+    'brand_detail' => 'プロフェッショナルのチームワークをめざそう。',
+    'service' => '事業内容',
+    'service_detail_1' => 'ソフトウェア開発',
+    'service_detail_2' => '人材育成',
+    'name-ja-profile' => 'name-ja-profile-css',
+    'name-vn-profile' => 'name-vn-profile-css',
+    'name-full-profile' => 'name-full-profile-css'
+];

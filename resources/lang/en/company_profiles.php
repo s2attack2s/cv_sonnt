@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'title' => 'COMPANY PROFILE',
+    'name' => 'COMPANY NAME',
+    'title_table_vn' => "TOP LOOP VIETNAM",
+    'title_table_ja' => "TOP LOOP JAPAN",
+    'name_detail_vn' => 'TOPLOOPCO.LTD',
+    'name_detail_jp' => 'TOPLOOPCO.LTD',
+    'founded' => 'FOUNDED',
+    'founded_detail_vn' => 'May 21,2019',
+    'founded_detail_jp' => 'Dec 3, 2019',
+    'tel' => 'TEL',
+    'capital' => 'CAPITAL',
+    'capital_detail_jp' => '5,000,000 JPY',
+    'bank' => 'MAIN BANK',
+    'bank_detail_vn' => 'TPBank',
+    'bank_detail_jp' => 'Mitsubishi UFJ, Shinjuku Branch',
+    'ceo' => 'CEO',
+    'ceo_detail_vn' => 'NGUYEN HONG PHUC',
+    'ceo_detail_jp' => 'NGUYEN HUU MANH KHOI',
+    'brand' => 'BRAND MESSAGE',
+    'brand_detail' => 'TEAMWORK OF PROFESSIONALS',
+    'service' => 'SERVICE',
+    'service_detail_1' => 'SOFTWARE DEVELOPMENT',
+    'service_detail_2' => 'HUMAN RESOURCE DEVELOPMENT',
+    'name-ja-profile' => 'en-name-ja-profile-css',
+    'name-vn-profile' => 'en-name-vn-profile-css',
+    'name-full-profile' => 'en-name-full-profile-css'
+];

@@ -1,0 +1,212 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-LightItalic.ttf");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-MediumItalic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Bold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-BoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Black.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-BlackItalic.ttf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.header-right {
+    height: 100%;
+    right: 82px;
+    width: 25px;
+}
+
+.section-header {
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.delivery-models-p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: relative;
+    top: 21%;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    height: calc(20% - 30px);
+    width: 4px;
+    background-color: #ffffff;
+    top: 0px;
+    right: 1px;
+}
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    height: calc(80% - 290px);
+    width: 4px;
+    background-color: #ffffff;
+    bottom: 0px;
+    right: 1px;
+}
+
+.section-header .title-square-left {
+    position: absolute;
+    top: calc(20% - 74px);
+    left: 2px;
+    z-index: -1;
+    width: 52px;
+    height: 52px;
+    border-radius: 5%;
+    background-color: #ef5122;
+}
+
+.section-header .title-square-right {
+    position: absolute;
+    top: calc(20% - 36px);
+    right: -18px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    border-radius: 10%;
+    background-color: #ef5122;
+    box-shadow: -2px -2px 0px 0px #b1b2b5;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-right {
+        height: 30px;
+        width: 100%;
+        right: unset;
+        top: 80px;
+    }
+    .section-header .title-square-right {
+        top: -19px !important;
+        left: 12px !important;
+    }
+    .delivery-models-p {
+        top: 0px;
+        display: inline-block;
+        writing-mode: unset;
+        left: 7.5%;
+    }
+    .section-header::after {
+        position: absolute;
+        width: calc(50% - -40px);
+        height: 3px !important;
+        top: 29px;
+        right: 2.5%;
+    }
+    .section-header::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .delivery-models-p {
+        left: 11.5%;
+    }
+    .section-header::after {
+        position: absolute;
+        width: calc(50% - -40px);
+        height: 3px !important;
+        top: 29px;
+        right: 2.5%;
+    }
+    .section-header::before {
+        display: none;
+    }
+    .section-header::after {
+        width: calc(50% - 102px);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .delivery-models-p-p {
+        left: 11.5%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .delivery-models-p {
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .delivery-models-p {
+        left: 13%;
+    }
+}

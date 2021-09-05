@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'title' => 'COMPANY PROFILE',
+    'name' => 'TÊN CÔNG TY',
+    'name_detail_vn' => 'CÔNG TY TNHH MTV TOP LOOP (TOP LOOP CO., LTD)',
+    'name_detail_jp' => 'Công ty Cổ phần TOP LOOP (株式会社トップループ)',
+    'title_table_vn' => "TOP LOOP VIỆT NAM",
+    'title_table_ja' => "TOP LOOP NHẬT BẢN",
+    'founded' => 'THÀNH LẬP',
+    'founded_detail_vn' => '21/05/2019',
+    'founded_detail_jp' => '03/12/2019',
+    'tel' => 'ĐIỆN THOẠI',
+    'capital' => 'VỐN ĐẦU TƯ',
+    'capital_detail_jp' => '5,000,000 JPY',
+    'bank' => 'NGÂN HÀNG GIAO DỊCH',
+    'bank_detail_vn' => 'tpbank',
+    'bank_detail_jp' => 'MITSUBISHI UFJ, RAKUTEN BANK',
+    'ceo' => 'GIÁM ĐỐC',
+    'ceo_detail_vn' => 'NGUYỄN HỒNG PHÚC',
+    'ceo_detail_jp' => 'NGUYỄN HỮU MẠNH KHÔI',
+    'brand' => 'THÔNG ĐIỆP THƯƠNG HIỆU',
+    'brand_detail' => 'TEAMWORK OF PROFESSIONALS',
+    'service' => 'NỘI DUNG KINH DOANH',
+    'service_detail_1' => 'PHÁT TRIỂN PHẦN MỀM',
+    'service_detail_2' => 'ĐÀO TẠO NHÂN LỰC',
+    'name-ja-profile' => 'vi-name-ja-profile-css',
+    'name-vn-profile' => 'vi-name-vn-profile-css',
+    'name-full-profile' => 'vi-name-full-profile-css'
+];

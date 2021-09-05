@@ -1,0 +1,64 @@
+version: '3'
+services:
+  #PHP Service
+  cv_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cv_sonnt/cv.vn
+    container_name: cv_app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: cv_app
+      SERVICE_TAGS: dev
+    working_dir: /var/www
+    volumes:
+       - ./:/var/www
+       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - cv-network
+
+  #Nginx Service
+  cv_webserver:
+    image: nginx:alpine
+    container_name: cv_webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "2213:80"
+      - "2214:443"
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - cv-network
+
+  #MySQL Service
+  cv_db:
+    image: mysql:5.7.22
+    container_name: cv_db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "63306:3306"
+    environment:
+      MYSQL_DATABASE: cv.vn
+      MYSQL_ROOT_PASSWORD: Admin@123
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - cv-network
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local
+
+#Docker Networks
+networks:
+  cv-network:
+    driver: bridge
